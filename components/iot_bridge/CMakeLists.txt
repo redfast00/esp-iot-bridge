@@ -31,7 +31,7 @@ endif()
 
 if ("${IDF_TARGET}" STREQUAL "esp32s2" OR "${IDF_TARGET}" STREQUAL "esp32s3")
     if("${IDF_VERSION_MAJOR}.${IDF_VERSION_MINOR}" VERSION_GREATER_EQUAL "4.4")
-        list(APPEND requires "esp_modem_usb_dte")
+        list(APPEND requires "esp_modem_usb_dte" "usb_device")
     endif()
 endif()
 
